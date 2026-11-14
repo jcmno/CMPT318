@@ -83,8 +83,78 @@
               "y": -55
             },
             "target": {
-              "x": 1121,
-              "y": 45
+              "x": 1020,
+              "y": 520
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           },
           {
@@ -1006,16 +1076,6 @@
               "cell": "421833be-4571-4e5a-80ca-22bffba5b505",
               "port": "dc8d3309-771e-48e7-a328-fdd467438808"
             },
-            "vertices": [
-              {
-                "x": 250,
-                "y": 520
-              },
-              {
-                "x": 660,
-                "y": 430
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -1050,7 +1110,17 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 250,
+                "y": 520
+              },
+              {
+                "x": 660,
+                "y": 430
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1663,6 +1733,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1746,7 +1817,6 @@
               ]
             },
             "id": "754f44b0-258c-4ba9-801f-d9be736bc30b",
-            "zIndex": 15,
             "data": {
               "type": "tm.Actor",
               "name": "Email Service ",
