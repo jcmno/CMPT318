@@ -50,7 +50,7 @@
                 "2694f312-fa8b-49e5-9a43-b3d58002b29d",
                 "722a116a-6653-482f-b681-486386339bbc",
                 "6b6ba260-6261-482e-8526-600f841adece",
-                "f0b1a5dd-6ec1-41c5-8825-b644a0aa2965"
+                "ad9fcc20-5cef-42e1-9789-add9ed5fa70e"
               ],
               "containedElements": [
                 "d9fc48f4-8d88-48c2-8dc7-6b8319ec0505",
@@ -235,12 +235,12 @@
           },
           {
             "position": {
-              "x": 87.5,
+              "x": 87.49999999999983,
               "y": 360
             },
             "size": {
-              "width": 112.5,
-              "height": 60
+              "width": 110,
+              "height": 50
             },
             "attrs": {
               "text": {
@@ -927,66 +927,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "CSV Direct Access through mobile",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "CSV Direct Access through mobile"
-            ],
-            "id": "0a356626-1c4b-4af0-ba51-042547bc2900",
-            "source": {
-              "cell": "8dd0980b-3ba5-4b9b-acc1-0de5a98e2c36",
-              "port": "dd44b995-b5b7-4232-ad41-70d3ad9835fb"
-            },
-            "target": {
-              "cell": "421833be-4571-4e5a-80ca-22bffba5b505",
-              "port": "dc8d3309-771e-48e7-a328-fdd467438808"
-            },
-            "vertices": [
-              {
-                "x": 420,
-                "y": 580
-              },
-              {
-                "x": 790,
-                "y": 500
-              },
-              {
-                "x": 830,
-                "y": 490
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Delivery Details\n",
               "description": "",
               "outOfScope": false,
@@ -1167,31 +1107,123 @@
             "labels": [
               "Store exported file"
             ],
-            "id": "f0b1a5dd-6ec1-41c5-8825-b644a0aa2965",
+            "id": "ad9fcc20-5cef-42e1-9789-add9ed5fa70e",
             "source": {
               "cell": "0456b988-9ed7-4d23-b987-369101392124",
               "port": "18893080-c8f9-425e-a48f-70e4121e383c"
             },
             "target": {
-              "cell": "421833be-4571-4e5a-80ca-22bffba5b505",
-              "port": "821dd278-82ec-4f4d-99e2-e5a673308e6f"
+              "cell": "d9161faf-d4d0-4096-a54d-c7e0327d1018",
+              "port": "5896aff4-6be5-4ab5-8995-705375064f0b"
             },
             "vertices": [
               {
-                "x": 820,
-                "y": 400
-              },
+                "x": 940,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "View Exported List",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "View Exported List"
+            ],
+            "id": "a50ae7a1-6eab-45b3-9c22-be14fda2518d",
+            "source": {
+              "cell": "d9161faf-d4d0-4096-a54d-c7e0327d1018",
+              "port": "fef4eecd-2bd1-4f61-8e1a-0be542b18abd"
+            },
+            "target": {
+              "cell": "8dd0980b-3ba5-4b9b-acc1-0de5a98e2c36",
+              "port": "dd44b995-b5b7-4232-ad41-70d3ad9835fb"
+            },
+            "vertices": [
               {
-                "x": 900,
-                "y": 420
-              },
+                "x": 700,
+                "y": 410
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "CSV Direct Access through mobile",
+              "description": "I don't think there is authentication here\n",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "CSV Direct Access through mobile"
+            ],
+            "id": "b8237c5a-f16e-4d90-ae5f-f6545254f80d",
+            "source": {
+              "cell": "8dd0980b-3ba5-4b9b-acc1-0de5a98e2c36",
+              "port": "dd44b995-b5b7-4232-ad41-70d3ad9835fb"
+            },
+            "target": {
+              "cell": "d9161faf-d4d0-4096-a54d-c7e0327d1018",
+              "port": "fef4eecd-2bd1-4f61-8e1a-0be542b18abd"
+            },
+            "vertices": [
               {
-                "x": 1000,
-                "y": 360
-              },
-              {
-                "x": 1030,
-                "y": 340
+                "x": 730,
+                "y": 470
               }
             ]
           },
@@ -1562,130 +1594,6 @@
           },
           {
             "position": {
-              "x": 1240,
-              "y": 289.99999999999994
-            },
-            "size": {
-              "width": 150,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Shared Folder"
-              },
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "zIndex": 14,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "01d54fb8-d7cd-40a4-9c34-28852a7755bf"
-                },
-                {
-                  "group": "right",
-                  "id": "f746bfd8-7341-4bbf-9b65-04cdc604a821"
-                },
-                {
-                  "group": "bottom",
-                  "id": "dc8d3309-771e-48e7-a328-fdd467438808"
-                },
-                {
-                  "group": "left",
-                  "id": "821dd278-82ec-4f4d-99e2-e5a673308e6f"
-                }
-              ]
-            },
-            "id": "421833be-4571-4e5a-80ca-22bffba5b505",
-            "data": {
-              "type": "tm.Store",
-              "name": "Shared Folder",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
               "x": 1120,
               "y": 10
             },
@@ -1803,8 +1711,8 @@
           },
           {
             "position": {
-              "x": 1322,
-              "y": 280
+              "x": 1160,
+              "y": 310
             },
             "size": {
               "width": 112.5,
@@ -1822,6 +1730,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1905,7 +1814,6 @@
               ]
             },
             "id": "d9161faf-d4d0-4096-a54d-c7e0327d1018",
-            "zIndex": 16,
             "data": {
               "type": "tm.Actor",
               "name": "E5 Shared Folder",
