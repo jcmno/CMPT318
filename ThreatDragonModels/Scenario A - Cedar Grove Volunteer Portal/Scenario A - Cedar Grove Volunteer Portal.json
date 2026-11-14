@@ -735,53 +735,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "433e2364-8aab-48c0-b3bc-585acdeeb9e5",
-            "source": {
-              "cell": "d9fc48f4-8d88-48c2-8dc7-6b8319ec0505",
-              "port": "3d5548e1-b85d-455e-a044-b068bfa6b7d4"
-            },
-            "target": {
-              "cell": "0456b988-9ed7-4d23-b987-369101392124",
-              "port": "816a76c4-a83e-4b6b-9720-1c38142876fc"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Store exported file",
               "description": "",
               "outOfScope": false,
@@ -809,7 +762,12 @@
               "cell": "421833be-4571-4e5a-80ca-22bffba5b505",
               "port": "821dd278-82ec-4f4d-99e2-e5a673308e6f"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 890,
+                "y": 320
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -909,6 +867,10 @@
               {
                 "x": 320,
                 "y": 350
+              },
+              {
+                "x": 370,
+                "y": 290
               }
             ]
           },
@@ -932,7 +894,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Download Weekly CSV",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -948,7 +910,7 @@
               ]
             },
             "labels": [
-              "Data Flow"
+              "Download Weekly CSV"
             ],
             "id": "722a116a-6653-482f-b681-486386339bbc",
             "source": {
@@ -981,7 +943,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "CSV Direct Access through mobile",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -995,7 +957,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "CSV Direct Access through mobile"
             ],
             "id": "0a356626-1c4b-4af0-ba51-042547bc2900",
             "source": {
@@ -1006,45 +968,14 @@
               "cell": "421833be-4571-4e5a-80ca-22bffba5b505",
               "port": "dc8d3309-771e-48e7-a328-fdd467438808"
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            },
             "vertices": [
               {
                 "x": 250,
                 "y": 520
+              },
+              {
+                "x": 620,
+                "y": 440
               },
               {
                 "x": 660,
@@ -1152,6 +1083,58 @@
               "port": "96cbc18f-ab0f-4766-98dd-03fec348e6a5"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Weekly CSV Export",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Weekly CSV Export"
+            ],
+            "id": "18f1ce7f-8451-4c6f-9abd-7fe0d0caf3a4",
+            "source": {
+              "cell": "e2d0707b-0c39-48bd-a594-c23f7f68d3e0",
+              "port": "86223afa-492e-4fe3-ad74-c888ba54d055"
+            },
+            "target": {
+              "cell": "0456b988-9ed7-4d23-b987-369101392124",
+              "port": "816a76c4-a83e-4b6b-9720-1c38142876fc"
+            },
+            "vertices": [
+              {
+                "x": 680,
+                "y": 280
+              }
+            ]
           },
           {
             "position": {
@@ -1520,8 +1503,8 @@
           },
           {
             "position": {
-              "x": 1096.25,
-              "y": 240
+              "x": 1100,
+              "y": 230
             },
             "size": {
               "width": 120,
