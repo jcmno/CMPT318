@@ -47,13 +47,13 @@
                 "794a4318-a3a9-449d-808d-8666b09fa968",
                 "14f6ae2c-91eb-4451-bb37-95fa9fa62dd9",
                 "17f91df1-fccd-4925-9292-364c0986aafa",
-                "f0b1a5dd-6ec1-41c5-8825-b644a0aa2965",
                 "2694f312-fa8b-49e5-9a43-b3d58002b29d"
               ],
               "containedElements": [
                 "d9fc48f4-8d88-48c2-8dc7-6b8319ec0505",
                 "e2d0707b-0c39-48bd-a594-c23f7f68d3e0",
-                "0456b988-9ed7-4d23-b987-369101392124"
+                "0456b988-9ed7-4d23-b987-369101392124",
+                "421833be-4571-4e5a-80ca-22bffba5b505"
               ]
             }
           },
@@ -294,7 +294,7 @@
           {
             "position": {
               "x": 450,
-              "y": 100
+              "y": 110
             },
             "size": {
               "width": 200,
@@ -763,9 +763,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "d98f4e5d-2f77-4b4c-bb35-02018dffbfe7"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Store exported file"
@@ -1249,8 +1247,8 @@
           },
           {
             "position": {
-              "x": 1040,
-              "y": 410
+              "x": 740,
+              "y": 400
             },
             "size": {
               "width": 120,
