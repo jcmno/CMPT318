@@ -21,8 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 350,
-              "y": -60
+              "x": 340,
+              "y": -50
             },
             "size": {
               "width": 580,
@@ -352,8 +352,8 @@
           },
           {
             "position": {
-              "x": 530,
-              "y": 40
+              "x": 490,
+              "y": 25
             },
             "size": {
               "width": 200,
@@ -781,7 +781,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Stores/Updates",
+              "name": "F5 Stores/Updates",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -795,7 +795,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Stores/Updates"
+              "F5 Stores/Updates"
             ],
             "id": "2f67f16f-d4a7-459b-abef-ca42cf35d1cb",
             "source": {
@@ -806,7 +806,12 @@
               "cell": "e2d0707b-0c39-48bd-a594-c23f7f68d3e0",
               "port": "acc1d121-0b32-428f-b131-6458791c5a22"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 720,
+                "y": 160
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -940,7 +945,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Delivery Details\n",
+              "name": "F7 Delivery Details\n",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -956,7 +961,7 @@
               ]
             },
             "labels": [
-              "Delivery Details\n"
+              "F7 Delivery Details\n"
             ],
             "id": "6b6ba260-6261-482e-8526-600f841adece",
             "source": {
@@ -975,6 +980,10 @@
               {
                 "x": 1000,
                 "y": 120
+              },
+              {
+                "x": 1040,
+                "y": 100
               }
             ]
           },
@@ -998,7 +1007,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Weekly CSV Export",
+              "name": "F8 Weekly CSV Export",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1012,7 +1021,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Weekly CSV Export"
+              "F8 Weekly CSV Export"
             ],
             "id": "18f1ce7f-8451-4c6f-9abd-7fe0d0caf3a4",
             "source": {
@@ -1050,7 +1059,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Confirmation Details",
+              "name": "F6 Confirmation Details",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1064,7 +1073,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Confirmation Details"
+              "F6 Confirmation Details"
             ],
             "id": "8ee14c17-eae8-4fdb-94ec-ada9400303c9",
             "source": {
@@ -1080,17 +1089,7 @@
                 "x": 600,
                 "y": 10
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -1112,7 +1111,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Store exported file",
+              "name": "F9 Store exported file",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1128,7 +1127,7 @@
               ]
             },
             "labels": [
-              "Store exported file"
+              "F9 Store exported file"
             ],
             "id": "ad9fcc20-5cef-42e1-9789-add9ed5fa70e",
             "source": {
@@ -1166,7 +1165,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "View Exported List",
+              "name": "F10 View Exported List",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1180,7 +1179,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "View Exported List"
+              "F10 View Exported List"
             ],
             "id": "a50ae7a1-6eab-45b3-9c22-be14fda2518d",
             "source": {
@@ -1193,8 +1192,16 @@
             },
             "vertices": [
               {
-                "x": 700,
-                "y": 410
+                "x": 980,
+                "y": 450
+              },
+              {
+                "x": 810,
+                "y": 440
+              },
+              {
+                "x": 470,
+                "y": 440
               }
             ]
           },
@@ -1218,7 +1225,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "CSV Direct Access through mobile",
+              "name": "F11 CSV Direct Access through mobile",
               "description": "I don't think there is authentication here\n",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1232,7 +1239,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "CSV Direct Access through mobile"
+              "F11 CSV Direct Access through mobile"
             ],
             "id": "b8237c5a-f16e-4d90-ae5f-f6545254f80d",
             "source": {
@@ -1247,6 +1254,18 @@
               {
                 "x": 230,
                 "y": 470
+              },
+              {
+                "x": 420,
+                "y": 470
+              },
+              {
+                "x": 570,
+                "y": 490
+              },
+              {
+                "x": 650,
+                "y": 490
               },
               {
                 "x": 1130,
@@ -1630,7 +1649,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Email Service "
+                "text": "E6 Email Service "
               },
               "body": {
                 "stroke": "#333333",
@@ -1726,7 +1745,7 @@
             "id": "754f44b0-258c-4ba9-801f-d9be736bc30b",
             "data": {
               "type": "tm.Actor",
-              "name": "Email Service ",
+              "name": "E6 Email Service ",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
