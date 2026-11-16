@@ -353,7 +353,7 @@
           {
             "position": {
               "x": 490,
-              "y": 25
+              "y": 20
             },
             "size": {
               "width": 200,
@@ -364,8 +364,8 @@
                 "text": "P1 Cedar Grove Portal "
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -462,12 +462,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "1f764a71-b0fe-437b-9467-311e8efbf7bd",
+                  "title": "T02 Access via compromised staff account:",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "An attacker with access from a Staff account (leaked credentials or bruteforce) could access and modify even modify the data without authorization. Staff accounts have access to Update and Assign actions over the Household database which can result in these actions.\n",
+                  "mitigation": "PROPOSED Enforce the use of MFA for staff accounts, using MFA the chance for account theft is greatly reduced as the attackers will need access to the MFA which can still be possible by stealing their login token but its harder to take effect. OWNER: coordinator. CHECK create a test account with the regular accesses for staff accounts with MFA enforced. Now try accessing it without using the MFA\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "cd5328d0-d0fc-4dfe-832a-7eb64401479e",
+                  "title": "T05 A Hijacked staff account can edit ",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "An attacker with a compromised staff account can do any edit/updates that they want and according to the organization description, there is no place where the actions done by a STAFF are recorded.",
+                  "mitigation": "PROPOSED There must be a login to record all actions taken by the staff, which must include edits, updates and deletions. OWNER coordinator CHECK with a staff account, try how the staff account edit and remove and then ask a second person if they can figure out with precision what were the changes made.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 2,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -636,12 +671,8 @@
             },
             "vertices": [
               {
-                "x": 360,
-                "y": 200
-              },
-              {
-                "x": 480,
-                "y": 125
+                "x": 340,
+                "y": 220
               }
             ]
           },
@@ -694,12 +725,8 @@
             },
             "vertices": [
               {
-                "x": 300,
-                "y": 160
-              },
-              {
-                "x": 350,
-                "y": 160
+                "x": 320,
+                "y": 125
               }
             ]
           },
@@ -862,12 +889,8 @@
             },
             "vertices": [
               {
-                "x": 300,
-                "y": 330
-              },
-              {
-                "x": 370,
-                "y": 290
+                "x": 430,
+                "y": 310
               }
             ]
           },
@@ -875,7 +898,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -896,15 +920,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "de115661-a37e-4fb0-87e9-adf341b85115",
+                  "title": "T03 Disabled Volunteer keeps access to downloaded files",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Volunteers have access to download a delivery list as a CSV file, from their phones or other devices. This can make an ex volunteer to have multiple versions of the CSV file stored in their phone and if they have a grudge against the organization they may choose to share this information.\n",
+                  "mitigation": "PROPOSED There are solutions for files like this to only be shared within the organization but the most basic one would be removing the permission to download csv files and change it for a temporary view, or share permission for files hosted online like a file in onedrive, google drive or just thru the permissions inside a shared folder. OWNER coordinator. CHECK create a volunteer account and download multiple iterations of the weekly delivery list and then disable the account check if the device the disabled volunteer account can open the file.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": [
                 "d98f4e5d-2f77-4b4c-bb35-02018dffbfe7"
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "F4 Download Weekly CSV"
@@ -918,12 +961,27 @@
               "cell": "8dd0980b-3ba5-4b9b-acc1-0de5a98e2c36",
               "port": "4384fd1e-f0f3-4978-860e-dcbdcd4563c8"
             },
-            "vertices": [
-              {
-                "x": 380,
-                "y": 385
-              }
-            ]
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -974,16 +1032,8 @@
             },
             "vertices": [
               {
-                "x": 990,
-                "y": 130
-              },
-              {
-                "x": 1000,
-                "y": 120
-              },
-              {
-                "x": 1040,
-                "y": 100
+                "x": 1020,
+                "y": 140
               }
             ]
           },
@@ -1086,8 +1136,8 @@
             },
             "vertices": [
               {
-                "x": 600,
-                "y": 10
+                "x": 620,
+                "y": -10
               }
             ]
           },
@@ -1140,7 +1190,7 @@
             },
             "vertices": [
               {
-                "x": 940,
+                "x": 950,
                 "y": 350
               }
             ]
@@ -1194,10 +1244,6 @@
               {
                 "x": 980,
                 "y": 450
-              },
-              {
-                "x": 810,
-                "y": 440
               },
               {
                 "x": 470,
@@ -1256,14 +1302,6 @@
                 "y": 470
               },
               {
-                "x": 420,
-                "y": 470
-              },
-              {
-                "x": 570,
-                "y": 490
-              },
-              {
                 "x": 650,
                 "y": 490
               },
@@ -1287,11 +1325,13 @@
                 "text": "D1 Household Database"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1388,13 +1428,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "8f6e4e77-89a0-4cb7-a7a2-52538c613103",
+                  "title": "T04 Database outage",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "This system relies solely on a single Database system to keep the services running. In case this hosting service suffers from a large number of accesses as in a DDOS attack.",
+                  "mitigation": "PROPOSED Have a High Availability system in place, using multiple (at least 2) database systems, in case one is down the other one comes in place, this will also help as a . OWNER coordinator. CHECK set and schedule downtime on the database and test if the updates can still reach the database.\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 2
+              }
             }
           },
           {
@@ -1652,8 +1712,8 @@
                 "text": "E6 Email Service "
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1750,9 +1810,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "c4227dd6-ab33-4097-8308-bb20591c3d55",
+                  "title": "T01 Email Service threat impersonating a client",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "An attacker may impersonate a client due to the public web form nature of the creation of delivery requests. The scenario never describes that there is an account attached to the client or anything that would make it more secure than a regular email.\n",
+                  "mitigation": "PROPOSED Provide an account to each client. With Username, password and MFA enforced to avoid any attempt of impersonating from attackers. OWNER coordinator. CHECK using a throw away email impersonate a client sending an email on their behalf\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -1877,6 +1955,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 8
   }
 }
