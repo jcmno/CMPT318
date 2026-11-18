@@ -21,7 +21,7 @@
         "cells": [
           {
             "position": {
-              "x": 340,
+              "x": 330,
               "y": -50
             },
             "size": {
@@ -352,7 +352,7 @@
           },
           {
             "position": {
-              "x": 490,
+              "x": 460,
               "y": 20
             },
             "size": {
@@ -473,9 +473,9 @@
                   "title": "T02 Access via compromised staff account:",
                   "status": "Open",
                   "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "An attacker with access from a Staff account (leaked credentials or bruteforce) could access and modify even modify the data without authorization. Staff accounts have access to Update and Assign actions over the Household database which can result in these actions.\n",
-                  "mitigation": "PROPOSED Enforce the use of MFA for staff accounts, using MFA the chance for account theft is greatly reduced as the attackers will need access to the MFA which can still be possible by stealing their login token but its harder to take effect. OWNER: coordinator. CHECK create a test account with the regular accesses for staff accounts with MFA enforced. Now try accessing it without using the MFA\n",
+                  "type": "Spoofing",
+                  "description": "An attacker with access from a Staff account (leaked credentials or bruteforce) could access and modify even modify the data without authorization. Staff accounts have access to Update and Assign actions over the Household database which can result in these actions.\n\n",
+                  "mitigation": "PROPOSED Enforce the use of MFA for staff accounts. This reduces the chance of account theft as the attackers will need access to the MFA, which can still be possible by stealing their login token but it's harder to take effect. \nOWNER: Coordinator. \nCHECK: Create a test account with the regular accesses for staff accounts with MFA enforced. Try to authenticate using only the username and password without providing the second factor. Verify that access is denied until successful MFA verification is completed.\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
@@ -496,13 +496,20 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 0,
+                "spoofing": 2,
                 "tampering": 2,
                 "repudiation": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -671,8 +678,8 @@
             },
             "vertices": [
               {
-                "x": 340,
-                "y": 220
+                "x": 370,
+                "y": 240
               }
             ]
           },
@@ -725,7 +732,7 @@
             },
             "vertices": [
               {
-                "x": 320,
+                "x": 290,
                 "y": 125
               }
             ]
@@ -779,11 +786,11 @@
             },
             "vertices": [
               {
-                "x": 260,
+                "x": 230,
                 "y": -10
               },
               {
-                "x": 380,
+                "x": 350,
                 "y": 10
               }
             ]
@@ -835,7 +842,7 @@
             },
             "vertices": [
               {
-                "x": 720,
+                "x": 690,
                 "y": 160
               }
             ]
@@ -889,7 +896,7 @@
             },
             "vertices": [
               {
-                "x": 430,
+                "x": 400,
                 "y": 310
               }
             ]
@@ -961,27 +968,12 @@
               "cell": "8dd0980b-3ba5-4b9b-acc1-0de5a98e2c36",
               "port": "4384fd1e-f0f3-4978-860e-dcbdcd4563c8"
             },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": [
+              {
+                "x": 410,
+                "y": 385
+              }
+            ]
           },
           {
             "shape": "flow",
