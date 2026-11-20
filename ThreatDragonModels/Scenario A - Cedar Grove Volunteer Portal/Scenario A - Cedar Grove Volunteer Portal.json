@@ -21,8 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 330,
-              "y": -50
+              "x": 320,
+              "y": -85
             },
             "size": {
               "width": 580,
@@ -48,14 +48,13 @@
                 "14f6ae2c-91eb-4451-bb37-95fa9fa62dd9",
                 "17f91df1-fccd-4925-9292-364c0986aafa",
                 "2694f312-fa8b-49e5-9a43-b3d58002b29d",
-                "722a116a-6653-482f-b681-486386339bbc",
-                "6b6ba260-6261-482e-8526-600f841adece",
-                "ad9fcc20-5cef-42e1-9789-add9ed5fa70e"
+                "7d645206-5842-4076-a87f-e0778c300ed5",
+                "ad9fcc20-5cef-42e1-9789-add9ed5fa70e",
+                "722a116a-6653-482f-b681-486386339bbc"
               ],
               "containedElements": [
                 "d9fc48f4-8d88-48c2-8dc7-6b8319ec0505",
-                "e2d0707b-0c39-48bd-a594-c23f7f68d3e0",
-                "0456b988-9ed7-4d23-b987-369101392124"
+                "e2d0707b-0c39-48bd-a594-c23f7f68d3e0"
               ]
             }
           },
@@ -503,13 +502,6 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -905,80 +897,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F4 Download Weekly CSV",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "de115661-a37e-4fb0-87e9-adf341b85115",
-                  "title": "T03 Disabled Volunteer keeps access to downloaded files",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Information disclosure",
-                  "description": "Volunteers have access to download a delivery list as a CSV file, from their phones or other devices. This can make an ex volunteer to have multiple versions of the CSV file stored in their phone and if they have a grudge against the organization they may choose to share this information.\n",
-                  "mitigation": "PROPOSED There are solutions for files like this to only be shared within the organization but the most basic one would be removing the permission to download csv files and change it for a temporary view, or share permission for files hosted online like a file in onedrive, google drive or just thru the permissions inside a shared folder. OWNER coordinator. CHECK create a volunteer account and download multiple iterations of the weekly delivery list and then disable the account check if the device the disabled volunteer account can open the file.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 6,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [
-                "d98f4e5d-2f77-4b4c-bb35-02018dffbfe7"
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "F4 Download Weekly CSV"
-            ],
-            "id": "722a116a-6653-482f-b681-486386339bbc",
-            "source": {
-              "cell": "0456b988-9ed7-4d23-b987-369101392124",
-              "port": "acc1d121-0b32-428f-b131-6458791c5a22"
-            },
-            "target": {
-              "cell": "8dd0980b-3ba5-4b9b-acc1-0de5a98e2c36",
-              "port": "4384fd1e-f0f3-4978-860e-dcbdcd4563c8"
-            },
-            "vertices": [
-              {
-                "x": 410,
-                "y": 385
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -995,61 +913,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F7 Delivery Details\n",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "d98f4e5d-2f77-4b4c-bb35-02018dffbfe7"
-              ]
-            },
-            "labels": [
-              "F7 Delivery Details\n"
-            ],
-            "id": "6b6ba260-6261-482e-8526-600f841adece",
-            "source": {
-              "cell": "e2d0707b-0c39-48bd-a594-c23f7f68d3e0",
-              "port": "18893080-c8f9-425e-a48f-70e4121e383c"
-            },
-            "target": {
-              "cell": "754f44b0-258c-4ba9-801f-d9be736bc30b",
-              "port": "96cbc18f-ab0f-4766-98dd-03fec348e6a5"
-            },
-            "vertices": [
-              {
-                "x": 1020,
-                "y": 140
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F8 Weekly CSV Export",
+              "name": "F6 Confirmation Email",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1063,59 +927,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "F8 Weekly CSV Export"
-            ],
-            "id": "18f1ce7f-8451-4c6f-9abd-7fe0d0caf3a4",
-            "source": {
-              "cell": "e2d0707b-0c39-48bd-a594-c23f7f68d3e0",
-              "port": "86223afa-492e-4fe3-ad74-c888ba54d055"
-            },
-            "target": {
-              "cell": "0456b988-9ed7-4d23-b987-369101392124",
-              "port": "816a76c4-a83e-4b6b-9720-1c38142876fc"
-            },
-            "vertices": [
-              {
-                "x": 680,
-                "y": 280
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F6 Confirmation Details",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "F6 Confirmation Details"
+              "F6 Confirmation Email"
             ],
             "id": "8ee14c17-eae8-4fdb-94ec-ada9400303c9",
             "source": {
@@ -1130,60 +942,6 @@
               {
                 "x": 620,
                 "y": -10
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F9 Store exported file",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "d98f4e5d-2f77-4b4c-bb35-02018dffbfe7"
-              ]
-            },
-            "labels": [
-              "F9 Store exported file"
-            ],
-            "id": "ad9fcc20-5cef-42e1-9789-add9ed5fa70e",
-            "source": {
-              "cell": "0456b988-9ed7-4d23-b987-369101392124",
-              "port": "18893080-c8f9-425e-a48f-70e4121e383c"
-            },
-            "target": {
-              "cell": "d9161faf-d4d0-4096-a54d-c7e0327d1018",
-              "port": "5896aff4-6be5-4ab5-8995-705375064f0b"
-            },
-            "vertices": [
-              {
-                "x": 950,
-                "y": 350
               }
             ]
           },
@@ -1304,9 +1062,257 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "F7 Delivery Details",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "F7 Delivery Details"
+            ],
+            "id": "a8036c41-8f9a-4715-bfd9-d12e300f2064",
+            "source": {
+              "cell": "e2d0707b-0c39-48bd-a594-c23f7f68d3e0",
+              "port": "18893080-c8f9-425e-a48f-70e4121e383c"
+            },
+            "target": {
+              "cell": "d9fc48f4-8d88-48c2-8dc7-6b8319ec0505",
+              "port": "f0c45883-d4ef-4820-901f-a422181889be"
+            },
+            "vertices": [
+              {
+                "x": 800,
+                "y": 105
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "F8 Deliver Confirmation Details",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "d98f4e5d-2f77-4b4c-bb35-02018dffbfe7"
+              ]
+            },
+            "labels": [
+              "F8 Deliver Confirmation Details"
+            ],
+            "id": "7d645206-5842-4076-a87f-e0778c300ed5",
+            "source": {
+              "cell": "d9fc48f4-8d88-48c2-8dc7-6b8319ec0505",
+              "port": "bc628f34-796d-4191-903c-e979a08b2638"
+            },
+            "target": {
+              "cell": "754f44b0-258c-4ba9-801f-d9be736bc30b",
+              "port": "1ecbc7fc-f667-4894-a427-1e77772f3e46"
+            },
+            "vertices": [
+              {
+                "x": 770,
+                "y": 70
+              },
+              {
+                "x": 830,
+                "y": 70
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "F9 Store exported file",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "d98f4e5d-2f77-4b4c-bb35-02018dffbfe7"
+              ]
+            },
+            "labels": [
+              "F9 Store exported file"
+            ],
+            "id": "ad9fcc20-5cef-42e1-9789-add9ed5fa70e",
+            "source": {
+              "cell": "d9fc48f4-8d88-48c2-8dc7-6b8319ec0505",
+              "port": "3d5548e1-b85d-455e-a044-b068bfa6b7d4"
+            },
+            "target": {
+              "cell": "d9161faf-d4d0-4096-a54d-c7e0327d1018",
+              "port": "5896aff4-6be5-4ab5-8995-705375064f0b"
+            },
+            "vertices": [
+              {
+                "x": 940,
+                "y": 370
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "F4 Download Weekly CSV",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "de115661-a37e-4fb0-87e9-adf341b85115",
+                  "title": "T03 Disabled Volunteer keeps access to downloaded files",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Volunteers have access to download a delivery list as a CSV file, from their phones or other devices. This can make an ex volunteer to have multiple versions of the CSV file stored in their phone and if they have a grudge against the organization they may choose to share this information.\n",
+                  "mitigation": "PROPOSED There are solutions for files like this to only be shared within the organization but the most basic one would be removing the permission to download csv files and change it for a temporary view, or share permission for files hosted online like a file in onedrive, google drive or just thru the permissions inside a shared folder. OWNER coordinator. CHECK create a volunteer account and download multiple iterations of the weekly delivery list and then disable the account check if the device the disabled volunteer account can open the file.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "d98f4e5d-2f77-4b4c-bb35-02018dffbfe7"
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "F4 Download Weekly CSV"
+            ],
+            "id": "722a116a-6653-482f-b681-486386339bbc",
+            "source": {
+              "cell": "d9fc48f4-8d88-48c2-8dc7-6b8319ec0505",
+              "port": "3d5548e1-b85d-455e-a044-b068bfa6b7d4"
+            },
+            "target": {
+              "cell": "8dd0980b-3ba5-4b9b-acc1-0de5a98e2c36",
+              "port": "4384fd1e-f0f3-4978-860e-dcbdcd4563c8"
+            },
+            "vertices": [
+              {
+                "x": 400,
+                "y": 405
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 760,
-              "y": 160
+              "x": 710,
+              "y": 170
             },
             "size": {
               "width": 150,
@@ -1568,132 +1574,8 @@
           },
           {
             "position": {
-              "x": 565,
-              "y": 320
-            },
-            "size": {
-              "width": 150,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "D2 CSV Export"
-              },
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "zIndex": 13,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "816a76c4-a83e-4b6b-9720-1c38142876fc"
-                },
-                {
-                  "group": "right",
-                  "id": "18893080-c8f9-425e-a48f-70e4121e383c"
-                },
-                {
-                  "group": "bottom",
-                  "id": "86223afa-492e-4fe3-ad74-c888ba54d055"
-                },
-                {
-                  "group": "left",
-                  "id": "acc1d121-0b32-428f-b131-6458791c5a22"
-                }
-              ]
-            },
-            "id": "0456b988-9ed7-4d23-b987-369101392124",
-            "data": {
-              "type": "tm.Store",
-              "name": "D2 CSV Export",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 1120,
-              "y": 10
+              "x": 1100,
+              "y": -20
             },
             "size": {
               "width": 112.5,
