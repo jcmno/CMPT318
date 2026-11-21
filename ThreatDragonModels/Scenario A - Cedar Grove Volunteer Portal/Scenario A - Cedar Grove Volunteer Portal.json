@@ -469,7 +469,7 @@
               "threats": [
                 {
                   "id": "1f764a71-b0fe-437b-9467-311e8efbf7bd",
-                  "title": "T02 Access via compromised staff account:",
+                  "title": "A02 Access via compromised staff account:",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
@@ -482,12 +482,12 @@
                 },
                 {
                   "id": "cd5328d0-d0fc-4dfe-832a-7eb64401479e",
-                  "title": "T05 A Hijacked staff account can edit ",
+                  "title": "A05 Volunteers actions cannot be traced",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Repudiation",
-                  "description": "An attacker with a compromised staff account can do any edit/updates that they want and according to the organization description, there is no place where the actions done by a STAFF are recorded.",
-                  "mitigation": "PROPOSED There must be a login to record all actions taken by the staff, which must include edits, updates and deletions. OWNER coordinator CHECK with a staff account, try how the staff account edit and remove and then ask a second person if they can figure out with precision what were the changes made.",
+                  "description": "Volunteers use a shared dispatch login to access the Cedar Grove Portal and download weekly delivery lists. Since multiple volunteers use the same account, the organization cannot determine which volunteer accessed or downloaded a specific CSV file. If delivery information is accessed inappropriately, a volunteer can deny responsibility because all activity appears under the same shared account.\n",
+                  "mitigation": "PROPOSED: Replace the shared dispatch account with individual volunteer accounts and maintain access logs showing the account, timestamp, and downloaded files. \nOWNER: Coordinator \nCHECK: Create separate volunteer accounts and verify that downloads by different volunteers are recorded under their own identities in the audit logs.\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 8,
@@ -495,9 +495,9 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "tampering": 2,
-                "repudiation": 1,
+                "repudiation": 3,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
@@ -1263,12 +1263,12 @@
               "threats": [
                 {
                   "id": "de115661-a37e-4fb0-87e9-adf341b85115",
-                  "title": "T03 Disabled Volunteer keeps access to downloaded files",
+                  "title": "A03 Disabled Volunteer keeps access to downloaded files",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Information disclosure",
                   "description": "Volunteers have access to download a delivery list as a CSV file, from their phones or other devices. This can make an ex volunteer to have multiple versions of the CSV file stored in their phone and if they have a grudge against the organization they may choose to share this information.\n",
-                  "mitigation": "PROPOSED There are solutions for files like this to only be shared within the organization but the most basic one would be removing the permission to download csv files and change it for a temporary view, or share permission for files hosted online like a file in onedrive, google drive or just thru the permissions inside a shared folder. OWNER coordinator. CHECK create a volunteer account and download multiple iterations of the weekly delivery list and then disable the account check if the device the disabled volunteer account can open the file.",
+                  "mitigation": "PROPOSED There are solutions for files like this to only be shared within the organization but the most basic one would be removing the permission to download csv files and change it for a temporary view, or share permission for files hosted online like a file in onedrive, google drive or just through the permissions inside a shared folder. \nOWNER coordinator. \nCHECK create a volunteer account and download multiple iterations of the weekly delivery list and then disable the account check if the device the disabled volunteer account can open the file.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 6,
@@ -1280,7 +1280,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             },
@@ -1429,7 +1429,7 @@
               "threats": [
                 {
                   "id": "8f6e4e77-89a0-4cb7-a7a2-52538c613103",
-                  "title": "T04 Database outage",
+                  "title": "A04 Database outage",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Denial of service",
@@ -1445,7 +1445,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 2
+                "denialOfService": 3
               }
             }
           },
@@ -1683,12 +1683,12 @@
               "threats": [
                 {
                   "id": "c4227dd6-ab33-4097-8308-bb20591c3d55",
-                  "title": "T01 Email Service threat impersonating a client",
+                  "title": "A01 Email Service threat impersonating a client",
                   "status": "Open",
                   "severity": "Low",
                   "type": "Spoofing",
                   "description": "An attacker may impersonate a client due to the public web form nature of the creation of delivery requests. The scenario never describes that there is an account attached to the client or anything that would make it more secure than a regular email.\n",
-                  "mitigation": "PROPOSED Provide an account to each client. With Username, password and MFA enforced to avoid any attempt of impersonating from attackers. OWNER coordinator. CHECK using a throw away email impersonate a client sending an email on their behalf\n",
+                  "mitigation": "PROPOSED Provide an account to each client. With Username, password and MFA enforced to avoid any attempt of impersonating from attackers. \nOWNER coordinator. \nCHECK using a throw away email impersonate a client sending an email on their behalf\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 4,
@@ -1696,9 +1696,16 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "repudiation": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1823,6 +1830,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 8
+    "threatTop": 9
   }
 }
