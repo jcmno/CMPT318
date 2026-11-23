@@ -469,12 +469,12 @@
               "threats": [
                 {
                   "id": "1f764a71-b0fe-437b-9467-311e8efbf7bd",
-                  "title": "A02 Access via compromised staff account:",
+                  "title": "A02 Hijacked account can modify records",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
-                  "description": "An attacker with access from a Staff account (leaked credentials or bruteforce) could access and modify even modify the data without authorization. Staff accounts have access to Update and Assign actions over the Household database which can result in these actions.\n\n",
-                  "mitigation": "PROPOSED Enforce the use of MFA for staff accounts. This reduces the chance of account theft as the attackers will need access to the MFA, which can still be possible by stealing their login token but it's harder to take effect. \nOWNER: Coordinator. \nCHECK: Create a test account with the regular accesses for staff accounts with MFA enforced. Try to authenticate using only the username and password without providing the second factor. Verify that access is denied until successful MFA verification is completed.\n",
+                  "description": "An attacker obtains a staff member's credentials through credential leakage, password reuse, or brute-force attacks and successfully authenticates to the Cedar Grove Portal as that staff member. Because staff accounts are authorized to review requests, update household records, and assign deliveries, the attacker can make unauthorized changes to household information and delivery assignments, which affects the integrity of client records and operations.\n\n\n",
+                  "mitigation": "PROPOSED: Enforce the use of MFA for staff accounts. This reduces the chance of account theft as the attackers will need access to the MFA, which can still be possible by stealing their login token but it's harder to take effect. \nOWNER: Coordinator. \nCHECK: Create a test account with the regular accesses for staff accounts with MFA enforced. Try to authenticate using only the username and password without providing the second factor. Verify that access is denied until successful MFA verification is completed.\n\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
@@ -495,9 +495,9 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 3,
+                "spoofing": 4,
                 "tampering": 2,
-                "repudiation": 3,
+                "repudiation": 4,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
@@ -1267,8 +1267,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Information disclosure",
-                  "description": "Volunteers have access to download a delivery list as a CSV file, from their phones or other devices. This can make an ex volunteer to have multiple versions of the CSV file stored in their phone and if they have a grudge against the organization they may choose to share this information.\n",
-                  "mitigation": "PROPOSED There are solutions for files like this to only be shared within the organization but the most basic one would be removing the permission to download csv files and change it for a temporary view, or share permission for files hosted online like a file in onedrive, google drive or just through the permissions inside a shared folder. \nOWNER coordinator. \nCHECK create a volunteer account and download multiple iterations of the weekly delivery list and then disable the account check if the device the disabled volunteer account can open the file.",
+                  "description": "Volunteers can download weekly delivery lists as CSV files to personal phones or other devices. Even if a volunteer's portal or shared-folder access is removed later, copies of previously downloaded CSV files may remain on their personal devices. A former volunteer could intentionally or accidentally disclose household names, addresses, contact details, and delivery information to unauthorized individuals, resulting in exposure of client information.\n",
+                  "mitigation": "PROPOSED: Reduce distribution of downloadable CSV files by providing read-only access where possible. If exported delivery lists must be shared, distribute them through controlled services such as Microsoft OneDrive, SharePoint, Google Drive, or a managed shared folder with access controls. Limit downloads to users who require offline access and remove access when volunteers leave the organization.\nOWNER: Coordinator\nCHECK: Create a test volunteer account, download a delivery list, then disable the account and verify that the user can no longer access newly shared delivery lists. Confirm that access to shared resources is revoked and that distribution mechanisms enforce the intended access restrictions.\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 6,
@@ -1280,7 +1280,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
             },
@@ -1298,10 +1298,24 @@
             },
             "vertices": [
               {
+                "x": 510,
+                "y": 270
+              },
+              {
                 "x": 400,
                 "y": 405
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
@@ -1429,12 +1443,12 @@
               "threats": [
                 {
                   "id": "8f6e4e77-89a0-4cb7-a7a2-52538c613103",
-                  "title": "A04 Database outage",
+                  "title": "A04 Database outage prevents portal operations",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Denial of service",
-                  "description": "This system relies solely on a single Database system to keep the services running. In case this hosting service suffers from a large number of accesses as in a DDOS attack.",
-                  "mitigation": "PROPOSED Have a High Availability system in place, using multiple (at least 2) database systems, in case one is down the other one comes in place, this will also help as a . OWNER coordinator. CHECK set and schedule downtime on the database and test if the updates can still reach the database.\n",
+                  "description": "The Cedar Grove Portal relies on a hosted database to store and retrieve household records, delivery requests, intake notes, and delivery assignments. If the database becomes unavailable due to a denial-of-service attack, infrastructure failure, or service outage at the hosting provider, staff and volunteers may be unable to access or update records. This could delay delivery scheduling and disrupt services for households that depend on the organization.",
+                  "mitigation": "PROPOSED: Deploy a highly available database architecture with a standby replica or failover database instance. Monitor database availability and establish backup and recovery procedures so that the portal can continue operating or be restored quickly in the event of an outage.\nOWNER: Coordinator\nCHECK: Simulate a database outage by disabling the primary database or database connection. Verify that the secondary database or failover process becomes active and that staff can continue viewing and updating records through the portal with minimal interruption.\n\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 7,
@@ -1445,7 +1459,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 3
+                "denialOfService": 6
               }
             }
           },
@@ -1687,8 +1701,8 @@
                   "status": "Open",
                   "severity": "Low",
                   "type": "Spoofing",
-                  "description": "An attacker may impersonate a client due to the public web form nature of the creation of delivery requests. The scenario never describes that there is an account attached to the client or anything that would make it more secure than a regular email.\n",
-                  "mitigation": "PROPOSED Provide an account to each client. With Username, password and MFA enforced to avoid any attempt of impersonating from attackers. \nOWNER coordinator. \nCHECK using a throw away email impersonate a client sending an email on their behalf\n",
+                  "description": "The Cedar Grove Portal accepts delivery requests through a public web form. The scenario does not describe any client authentication or account verification process. An attacker could submit requests while pretending to be an existing client by providing their name, address, and contact information. This could result in fraudulent requests, incorrect household records, or misuse of delivery resources.\n",
+                  "mitigation": "PROPOSED: Require clients to create accounts protected by a username, password, and multi-factor authentication before submitting or modifying requests. Additionally, verify ownership of the registered email address before activating new client accounts.\nOWNER: Coordinator\nCHECK: Create a test client account and attempt to submit or modify requests using only publicly known information about that client. Verify that requests cannot be submitted or changed without successful authentication and MFA verification.\n\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 4,
@@ -1696,7 +1710,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "repudiation": 0
               }
             }
