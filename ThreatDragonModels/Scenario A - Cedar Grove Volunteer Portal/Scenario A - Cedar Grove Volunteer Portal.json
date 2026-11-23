@@ -1296,16 +1296,6 @@
               "cell": "8dd0980b-3ba5-4b9b-acc1-0de5a98e2c36",
               "port": "4384fd1e-f0f3-4978-860e-dcbdcd4563c8"
             },
-            "vertices": [
-              {
-                "x": 510,
-                "y": 270
-              },
-              {
-                "x": 400,
-                "y": 405
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -1315,7 +1305,17 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 510,
+                "y": 270
+              },
+              {
+                "x": 400,
+                "y": 405
+              }
+            ]
           },
           {
             "position": {
