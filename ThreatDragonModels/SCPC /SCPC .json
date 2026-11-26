@@ -40,6 +40,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +124,6 @@
               ]
             },
             "id": "d0ab9f4d-4407-4d3c-b846-7f2b9defb097",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Access Management ",
@@ -160,6 +160,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -243,7 +244,6 @@
               ]
             },
             "id": "8337e1ab-3dca-4781-a6a7-68bef2647d19",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Volunteer",
@@ -277,6 +277,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -360,7 +361,6 @@
               ]
             },
             "id": "b771fc51-f48c-4cf1-b298-5cdba711e686",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Staff ",
@@ -397,6 +397,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -480,7 +481,6 @@
               ]
             },
             "id": "4c83bba0-aeea-4c82-903f-e6a743eebbfd",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "Google Drive ",
