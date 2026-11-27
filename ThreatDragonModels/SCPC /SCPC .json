@@ -21,8 +21,40 @@
         "cells": [
           {
             "position": {
-              "x": 280,
-              "y": 130
+              "x": 79.9999999999992,
+              "y": 30.000000000002387
+            },
+            "size": {
+              "width": 580,
+              "height": 280
+            },
+            "attrs": {
+              "label": {
+                "text": "Trust Boundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "c89facdb-40d2-4d5c-a086-d9f1ae176d17",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "d0ab9f4d-4407-4d3c-b846-7f2b9defb097",
+                "b771fc51-f48c-4cf1-b298-5cdba711e686",
+                "8dae36ba-2183-4440-b4ab-27d5a99139b8"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 270,
+              "y": 90.00000000000239
             },
             "size": {
               "width": 230,
@@ -30,7 +62,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Access Management "
+                "text": "Shared Google Account/\nAccess Management "
               },
               "body": {
                 "stroke": "#333333",
@@ -126,7 +158,7 @@
             "id": "d0ab9f4d-4407-4d3c-b846-7f2b9defb097",
             "data": {
               "type": "tm.Process",
-              "name": "Access Management ",
+              "name": "Shared Google Account/\nAccess Management ",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -141,8 +173,8 @@
           },
           {
             "position": {
-              "x": 40,
-              "y": 270
+              "x": 90,
+              "y": 360
             },
             "size": {
               "width": 112.5,
@@ -258,8 +290,8 @@
           },
           {
             "position": {
-              "x": 40,
-              "y": 130
+              "x": 110,
+              "y": 110
             },
             "size": {
               "width": 112.5,
@@ -375,8 +407,8 @@
           },
           {
             "position": {
-              "x": 570,
-              "y": 300
+              "x": 520,
+              "y": 370
             },
             "size": {
               "width": 120,
@@ -484,6 +516,247 @@
             "data": {
               "type": "tm.Store",
               "name": "Google Drive ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 338.75,
+              "y": -90
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "EasyOnNet"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "bb13d251-cf12-46fd-be83-f476372fd08a"
+                },
+                {
+                  "group": "right",
+                  "id": "7b4b5bb9-06e1-4d59-ae61-bdb84fadd387"
+                },
+                {
+                  "group": "bottom",
+                  "id": "68c66fb1-9ad4-45f7-917d-a9cf6e7f2c41"
+                },
+                {
+                  "group": "left",
+                  "id": "3a110235-78d8-46bf-9d1e-5a7619437f2d"
+                }
+              ]
+            },
+            "id": "558d858c-17da-41bf-93b0-bef887962bfd",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Actor",
+              "name": "EasyOnNet",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 520,
+              "y": 140.0000000000024
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Email Inbox "
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "168a1669-ac02-4a2d-a5aa-54da372098f4"
+                },
+                {
+                  "group": "right",
+                  "id": "e90da5d4-bbd5-4873-afc1-fc14bc083bdb"
+                },
+                {
+                  "group": "bottom",
+                  "id": "3157ca46-9c59-422f-866b-71928e3df40b"
+                },
+                {
+                  "group": "left",
+                  "id": "885e3c67-4166-4b34-a5f5-486b0b932ea7"
+                }
+              ]
+            },
+            "id": "8dae36ba-2183-4440-b4ab-27d5a99139b8",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Store",
+              "name": "Email Inbox ",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
