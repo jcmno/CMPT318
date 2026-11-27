@@ -22,7 +22,7 @@
           {
             "position": {
               "x": 149.99999999999955,
-              "y": -165
+              "y": -164.99999999999994
             },
             "size": {
               "width": 1080,
@@ -30,7 +30,7 @@
             },
             "attrs": {
               "label": {
-                "text": "Trust Boundary"
+                "text": "TB1"
               }
             },
             "visible": true,
@@ -39,7 +39,7 @@
             "id": "c89facdb-40d2-4d5c-a086-d9f1ae176d17",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "TB1",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -176,7 +176,7 @@
           {
             "position": {
               "x": 180,
-              "y": 380.0000000000024
+              "y": 360.0000000000024
             },
             "size": {
               "width": 112.5,
@@ -184,7 +184,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Volunteer"
+                "text": "E2 Volunteer"
               },
               "body": {
                 "stroke": "#333333",
@@ -280,7 +280,7 @@
             "id": "8337e1ab-3dca-4781-a6a7-68bef2647d19",
             "data": {
               "type": "tm.Actor",
-              "name": "Volunteer",
+              "name": "E2 Volunteer",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -301,7 +301,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Staff "
+                "text": "E1 Staff "
               },
               "body": {
                 "stroke": "#333333",
@@ -397,7 +397,7 @@
             "id": "b771fc51-f48c-4cf1-b298-5cdba711e686",
             "data": {
               "type": "tm.Actor",
-              "name": "Staff ",
+              "name": "E1 Staff ",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -410,7 +410,7 @@
           {
             "position": {
               "x": 920,
-              "y": 120
+              "y": -20
             },
             "size": {
               "width": 120,
@@ -1120,6 +1120,53 @@
             "source": {
               "cell": "77ca4300-48c9-4e3c-b441-5de6b08f2c11",
               "port": "77203a41-1bab-48eb-a908-61e46b23364d"
+            },
+            "target": {
+              "cell": "d0ab9f4d-4407-4d3c-b846-7f2b9defb097",
+              "port": "dad06070-24cd-48ea-ad15-677b12a7a7cd"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "c3796ddd-9ecb-4b1d-b196-0e07e15ff131",
+            "source": {
+              "cell": "4c83bba0-aeea-4c82-903f-e6a743eebbfd",
+              "port": "9468bae0-0a48-4c8d-aed0-3422ed7369dd"
             },
             "target": {
               "cell": "d0ab9f4d-4407-4d3c-b846-7f2b9defb097",
