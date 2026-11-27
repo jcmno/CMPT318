@@ -21,12 +21,12 @@
         "cells": [
           {
             "position": {
-              "x": 259.9999999999992,
-              "y": 30.000000000002387
+              "x": 160,
+              "y": -150
             },
             "size": {
-              "width": 580,
-              "height": 280
+              "width": 950,
+              "height": 630
             },
             "attrs": {
               "label": {
@@ -46,14 +46,24 @@
               "crossingFlows": [],
               "containedElements": [
                 "d0ab9f4d-4407-4d3c-b846-7f2b9defb097",
-                "4c83bba0-aeea-4c82-903f-e6a743eebbfd"
+                "8337e1ab-3dca-4781-a6a7-68bef2647d19",
+                "b771fc51-f48c-4cf1-b298-5cdba711e686",
+                "4c83bba0-aeea-4c82-903f-e6a743eebbfd",
+                "77ca4300-48c9-4e3c-b441-5de6b08f2c11"
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
             "position": {
-              "x": 321.25,
-              "y": 100.00000000000239
+              "x": 370,
+              "y": 190
             },
             "size": {
               "width": 230,
@@ -61,7 +71,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Access Management "
+                "text": "Google Drive Access "
               },
               "body": {
                 "stroke": "#333333",
@@ -157,7 +167,7 @@
             "id": "d0ab9f4d-4407-4d3c-b846-7f2b9defb097",
             "data": {
               "type": "tm.Process",
-              "name": "Access Management ",
+              "name": "Google Drive Access ",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -172,8 +182,8 @@
           },
           {
             "position": {
-              "x": 70,
-              "y": 190.0000000000024
+              "x": 180,
+              "y": 380.0000000000024
             },
             "size": {
               "width": 112.5,
@@ -289,8 +299,8 @@
           },
           {
             "position": {
-              "x": 70,
-              "y": 30.000000000002387
+              "x": 180,
+              "y": -60
             },
             "size": {
               "width": 112.5,
@@ -406,8 +416,8 @@
           },
           {
             "position": {
-              "x": 600,
-              "y": 150.0000000000024
+              "x": 870,
+              "y": 135
             },
             "size": {
               "width": 120,
@@ -530,8 +540,8 @@
           },
           {
             "position": {
-              "x": 380,
-              "y": -110
+              "x": 438.75,
+              "y": -280
             },
             "size": {
               "width": 112.5,
@@ -647,8 +657,8 @@
           },
           {
             "position": {
-              "x": 580,
-              "y": -69.99999999999761
+              "x": 690,
+              "y": -290
             },
             "size": {
               "width": 120,
@@ -766,6 +776,126 @@
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 405,
+              "y": -90
+            },
+            "size": {
+              "width": 160,
+              "height": 170
+            },
+            "attrs": {
+              "text": {
+                "text": "Shared email account "
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "4646b73c-4b7c-402f-bfdc-5dbcd48d39ba"
+                },
+                {
+                  "group": "right",
+                  "id": "b15d87d4-8045-4450-8d6a-763ab8d07d43"
+                },
+                {
+                  "group": "bottom",
+                  "id": "77203a41-1bab-48eb-a908-61e46b23364d"
+                },
+                {
+                  "group": "left",
+                  "id": "c3532755-533a-4624-869f-9936425df90a"
+                }
+              ]
+            },
+            "id": "77ca4300-48c9-4e3c-b441-5de6b08f2c11",
+            "zIndex": 7,
+            "data": {
+              "type": "tm.Process",
+              "name": "Shared email account ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
               "threats": []
             }
           }
