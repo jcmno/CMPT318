@@ -21,7 +21,7 @@
         "cells": [
           {
             "position": {
-              "x": 79.9999999999992,
+              "x": 259.9999999999992,
               "y": 30.000000000002387
             },
             "size": {
@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "c89facdb-40d2-4d5c-a086-d9f1ae176d17",
             "zIndex": -1,
+            "id": "c89facdb-40d2-4d5c-a086-d9f1ae176d17",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -46,15 +46,14 @@
               "crossingFlows": [],
               "containedElements": [
                 "d0ab9f4d-4407-4d3c-b846-7f2b9defb097",
-                "b771fc51-f48c-4cf1-b298-5cdba711e686",
-                "8dae36ba-2183-4440-b4ab-27d5a99139b8"
+                "4c83bba0-aeea-4c82-903f-e6a743eebbfd"
               ]
             }
           },
           {
             "position": {
-              "x": 270,
-              "y": 90.00000000000239
+              "x": 321.25,
+              "y": 100.00000000000239
             },
             "size": {
               "width": 230,
@@ -62,7 +61,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Shared Google Account/\nAccess Management "
+                "text": "Access Management "
               },
               "body": {
                 "stroke": "#333333",
@@ -158,7 +157,7 @@
             "id": "d0ab9f4d-4407-4d3c-b846-7f2b9defb097",
             "data": {
               "type": "tm.Process",
-              "name": "Shared Google Account/\nAccess Management ",
+              "name": "Access Management ",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -173,8 +172,8 @@
           },
           {
             "position": {
-              "x": 100,
-              "y": 360
+              "x": 70,
+              "y": 190.0000000000024
             },
             "size": {
               "width": 112.5,
@@ -290,8 +289,8 @@
           },
           {
             "position": {
-              "x": 110,
-              "y": 140.0000000000024
+              "x": 70,
+              "y": 30.000000000002387
             },
             "size": {
               "width": 112.5,
@@ -407,8 +406,8 @@
           },
           {
             "position": {
-              "x": 520,
-              "y": 360
+              "x": 600,
+              "y": 150.0000000000024
             },
             "size": {
               "width": 120,
@@ -531,8 +530,8 @@
           },
           {
             "position": {
-              "x": 338.75,
-              "y": -90
+              "x": 380,
+              "y": -110
             },
             "size": {
               "width": 112.5,
@@ -550,6 +549,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -633,7 +633,6 @@
               ]
             },
             "id": "558d858c-17da-41bf-93b0-bef887962bfd",
-            "zIndex": 5,
             "data": {
               "type": "tm.Actor",
               "name": "EasyOnNet",
@@ -648,8 +647,8 @@
           },
           {
             "position": {
-              "x": 520,
-              "y": 140.0000000000024
+              "x": 580,
+              "y": -69.99999999999761
             },
             "size": {
               "width": 120,
@@ -670,6 +669,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -753,7 +753,6 @@
               ]
             },
             "id": "8dae36ba-2183-4440-b4ab-27d5a99139b8",
-            "zIndex": 6,
             "data": {
               "type": "tm.Store",
               "name": "Email Inbox ",
